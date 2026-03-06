@@ -4,8 +4,7 @@
 **Started:** March 2026
 **Status:** MVP Live
 **Built With:** Lovable
-**Live Product:** [Plotify](https://plotify.lovable.app)
-
+**Live Product:** [Plotify](https://getplotify.vercel.app)
 ---
 
 ## 1. The Problem
