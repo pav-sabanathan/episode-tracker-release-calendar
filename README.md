@@ -23,4 +23,4 @@ to track when new episodes drop. This tool solves that.
 | /case-study | End-to-end case study write-up |
 
 ## Live Product
-🔗 [Plotify](https://plotify.lovable.app)
+🔗 [Plotify — Live Product](https://plotify.lovable.app)
