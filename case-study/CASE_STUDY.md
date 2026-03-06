@@ -4,7 +4,7 @@
 **Started:** March 2026
 **Status:** MVP Live
 **Built With:** Lovable
-**Live Product:** [StreamLine](https://watch-track-sync.lovable.app)
+**Live Product:** [Plotify](https://plotify.lovable.app)
 
 ---
 
