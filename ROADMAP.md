@@ -32,16 +32,16 @@ prompt, deployed independently on Vercel.
 First impression improvements to complete before new features 
 are added and before the product is shared publicly.
 
-- [ ] Empty states for Home, My Shows, and Search screens
-- [ ] First-time user onboarding flow (three-step modal)
-- [ ] Form validation on manual Add Show (required fields)
-- [ ] Error handling throughout (duplicate shows, failed states)
-- [ ] Success and error toast notifications on show add
-- [ ] Favicon using Plotify icon mark
-- [ ] In-app feedback mechanism (mock — no backend yet)
-- [ ] Privacy Policy page
-- [ ] Terms of Service page
-- [ ] Footer with Privacy Policy and Terms links on all screens
+- [x] Empty states for Home, My Shows, and Search screens
+- [x] First-time user onboarding flow (three-step modal)
+- [x] Form validation on manual Add Show (required fields)
+- [x] Error handling throughout (duplicate shows, failed states)
+- [x] Success and error toast notifications on show add
+- [x] Favicon using Plotify icon mark
+- [x] In-app feedback mechanism (mock — no backend yet)
+- [x] Privacy Policy page
+- [x] Terms of Service page
+- [x] Footer with Privacy Policy and Terms links on all screens
 
 ---
 
