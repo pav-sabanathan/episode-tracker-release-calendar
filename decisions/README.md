@@ -34,6 +34,7 @@ Each decision document follows the same structure:
 | Split Pre-V2 Polish into two prompts after build failure | Pre-V2 | Smaller focused prompts reduce conflict risk and are easier to debug and revert |
 | Reset flag approach for developer testing utility | Pre-V2 | Clearing localStorage re-triggers first-visit seeding — a separate flag was needed to distinguish intentional resets from genuine first visits |
 | Release day not mapping correctly to calendar | Pre-V2 | Manual add form was defaulting all shows to Friday regardless of selected day — fixed by correctly mapping weekday selection to calendar date calculation |
+| Season and Episode number input appending instead of replacing | Pre-V2 | Number fields defaulted to 0 on clear and appended new input rather than replacing — fixed with proper empty state handling and input validation |
 
 ---
 
