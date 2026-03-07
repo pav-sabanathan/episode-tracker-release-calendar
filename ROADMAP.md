@@ -27,7 +27,7 @@ prompt, deployed independently on Vercel.
 
 ---
 
-## 🔧 Pre-V2 Polish — In Planning
+## 🔧 Pre-V2 Polish — (Shipped March 2026)
 
 First impression improvements to complete before new features 
 are added and before the product is shared publicly.
