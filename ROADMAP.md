@@ -27,21 +27,29 @@ prompt, deployed independently on Vercel.
 
 ---
 
-## 🔧 Pre-V2 Polish — (Shipped March 2026)
+## 🔧 Pre-V2 Polish — ✅ Complete
 
-First impression improvements to complete before new features 
-are added and before the product is shared publicly.
-
-- [x] Empty states for Home, My Shows, and Search screens
-- [x] First-time user onboarding flow (three-step modal)
-- [x] Form validation on manual Add Show (required fields)
-- [x] Error handling throughout (duplicate shows, failed states)
-- [x] Success and error toast notifications on show add
-- [x] Favicon using Plotify icon mark
-- [x] In-app feedback mechanism (mock — no backend yet)
+- [x] Empty states (Home, My Shows, Search)
+- [x] First-time onboarding flow (3-step modal)
+- [x] Form validation and error handling
+- [x] Duplicate show detection with toast
+- [x] Success/error toast notifications
+- [x] Favicon (PNG, icon mark only, transparent background)
+- [x] In-app feedback mechanism (mock)
 - [x] Privacy Policy page
 - [x] Terms of Service page
-- [x] Footer with Privacy Policy and Terms links on all screens
+- [x] Footer with Privacy/Terms links (desktop)
+- [x] Remove sample data — clean empty state as default
+- [x] localStorage persistence for user-added shows
+- [x] Remove Reset App Data developer utility
+- [x] Release day bug fix — episodes mapping to correct weekday
+- [x] Number input bug fix — Season and Episode fields
+- [x] Logo added to header (transparent PNG)
+- [x] Show initials fallback poster (e.g. F.G. for Family Guy)
+- [x] Logo clickable — returns user to Home from any screen
+- [x] Mobile layout optimised for Android Chrome
+- [x] Footer links moved to Settings on mobile
+- [x] Settings added to bottom navigation bar
 
 ---
 
