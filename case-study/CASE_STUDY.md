@@ -192,6 +192,70 @@ that had worked cleanly in the original V1 build:
 
 Both prompts executed cleanly on the second attempt.
 
+**Post-Polish — Branding, Persistence & Mobile Optimisation**
+
+With the core Polish update shipped, a second round 
+of improvements focused on three areas: branding, 
+data behaviour, and mobile experience.
+
+**Branding**
+A Plotify logo was designed in Canva and integrated 
+into the app header. Key decisions along the way:
+- Background removal was required to avoid the logo's 
+  dark rectangle appearing on the app's dark background 
+  at larger sizes
+- The logo was made interactive — clicking it returns 
+  the user to the Home screen from any tab, following 
+  standard web navigation conventions
+- A fallback poster was designed for manually added 
+  shows using show initials (e.g. F.G. for Family Guy) 
+  since no artwork API is available at this stage
+
+**Data Persistence**
+Before going public on LinkedIn, the default app 
+state was corrected. The original build seeded sample 
+shows on every first visit — meaning any new visitor 
+who hadn't manually reset their localStorage would 
+see pre-populated data rather than the intended 
+onboarding experience.
+
+The fix removed sample data seeding entirely, 
+implemented proper localStorage persistence for 
+user-added shows, and removed the developer Reset 
+App Data button that had been used for testing. 
+Every new visitor now sees the clean onboarding 
+flow by default, and any shows they add persist 
+across sessions and page refreshes.
+
+**Mobile Optimisation**
+Testing on a OnePlus 13 running Android Chrome 
+revealed a persistent layout issue: the footer 
+links (Privacy Policy, Terms of Service, Send 
+Feedback) were not visible without scrolling 
+due to Android Chrome's dynamic address bar 
+behaviour affecting viewport height calculations.
+
+After five iterations attempting CSS-based fixes 
+(100dvh, fixed positioning, space-between flex, 
+absolute positioning), the root cause was 
+identified as a UX pattern mismatch rather than 
+a technical problem — footer links are a desktop 
+convention and do not belong on a mobile home 
+screen. The correct solution was to move these 
+links to the Settings page, which is where mobile 
+users expect to find them.
+
+This decision also prompted adding Settings as 
+a permanent tab in the bottom navigation bar, 
+improving discoverability of app preferences 
+and legal links.
+
+**Key learning:** Sometimes a persistent UI bug 
+is a signal that the design pattern itself is 
+wrong for the context, not just the implementation. 
+Recognising when to change the approach rather 
+than continue fixing the same problem is a 
+valuable instinct in both engineering and product.
 **The Reset Button Problem**
 
 During testing of the onboarding flow and empty states, 
