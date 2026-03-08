@@ -36,6 +36,11 @@ Each decision document follows the same structure:
 | Release day not mapping correctly to calendar | Pre-V2 | Manual add form was defaulting all shows to Friday regardless of selected day — fixed by correctly mapping weekday selection to calendar date calculation |
 | Season and Episode number input appending instead of replacing | Pre-V2 | Number fields defaulted to 0 on clear and appended new input rather than replacing — fixed with proper empty state handling and input validation |
 | Logo as home navigation | Pre-V2 | Standard web convention — clicking a logo returns the user to the homepage, reducing navigation friction |
+| Remove sample data seeding — empty state as default | Pre-V2 Polish | New visitors should experience the intended onboarding flow, not pre-populated data that gives a false impression of the product |
+| Move footer legal links to Settings on mobile | Pre-V2 Polish | Footer links are a desktop convention — on mobile they belong in Settings where users expect to find them, and removing them fixed a persistent Android Chrome layout bug |
+| Add Settings as permanent bottom nav tab | Pre-V2 Polish | Discoverability — with legal links and feedback moved to Settings, users need a clear way to find it without burying it behind a cog icon |
+| Logo made interactive — click navigates to Home | Pre-V2 Polish | Standard web convention that reduces navigation friction from any screen |
+| Show initials as fallback poster | Pre-V2 Polish | No artwork API available at this stage — initials (e.g. F.G.) are more informative than a generic TV icon and scale to any show name |
 
 ---
 
