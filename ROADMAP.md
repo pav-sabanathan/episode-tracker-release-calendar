@@ -116,6 +116,13 @@ server-side via Supabase to avoid front-end exposure.
 Attribution required: "This product uses the TMDb 
 API but is not endorsed or certified by TMDb."
 
+**New season detection:** On app open, Plotify checks 
+TMDb for premiere date updates on shows marked as 
+"ended" or "between seasons" in the user's watchlist. 
+If a new season premiere date is found, the calendar 
+is updated automatically and the user is notified 
+via toast. Scope: V5 alongside TMDb integration.
+
 ---
 
 ## 🔭 Future Versions — Backlog
