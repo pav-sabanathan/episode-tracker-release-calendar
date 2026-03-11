@@ -41,6 +41,7 @@ Each decision document follows the same structure:
 | Add Settings as permanent bottom nav tab | Pre-V2 Polish | Discoverability — with legal links and feedback moved to Settings, users need a clear way to find it without burying it behind a cog icon |
 | Logo made interactive — click navigates to Home | Pre-V2 Polish | Standard web convention that reduces navigation friction from any screen |
 | Show initials as fallback poster | Pre-V2 Polish | No artwork API available at this stage — initials (e.g. F.G.) are more informative than a generic TV icon and scale to any show name |
+| Calendar pills link to watch tracking | V2 | Calendar should be an entry point for marking episodes watched, not just a passive release schedule view — reduces the steps needed to log a watched episode |
 
 ---
 
