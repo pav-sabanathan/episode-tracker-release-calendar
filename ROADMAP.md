@@ -3,8 +3,8 @@
 > This roadmap reflects the current development plan for Plotify. 
 > It is a living document and will be updated after each version ships.
 
-**Last Updated:** March 2026  
-**Current Version:** V1 — MVP Live  
+**Last Updated:** March 2026 
+**Current Version:** V2 — Core Feature Expansion Live 
 **Live Product:** [getplotify.vercel.app](https://getplotify.vercel.app)
 
 ---
