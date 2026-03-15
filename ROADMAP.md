@@ -53,20 +53,18 @@ prompt, deployed independently on Vercel.
 
 ---
 
-## 🚧 V2 — Core Feature Expansion — In Planning
+## 🚀 V2 — Core Feature Expansion — ✅ Complete
 
-Expanding the core functionality based on the most valuable 
-user needs identified post-MVP.
-
-- Mock IMDb-style show database with real-time search
-  (20+ shows pre-loaded with full metadata)
-- Auto-population of calendar on show add via search
-- ICS calendar export per series (Google, Apple, Outlook)
-- Episode watch tracking with per-episode checkboxes
-- Watch progress indicator on My Shows cards
-- Show detail panel with full episode list
-- Calendar episode pills link to Show Detail 
-  panel for direct watch tracking access
+- [x] Mock IMDb-style show database with real-time search
+- [x] Auto-population of calendar on show add via search
+- [x] ICS calendar export per series (Google, Apple, Outlook)
+- [x] Episode watch tracking with per-episode checkboxes
+- [x] Watch progress indicator on My Shows cards
+- [x] Show detail panel with full episode list
+- [x] Calendar episode pills link directly to Show Detail 
+      panel for direct watch tracking access
+- [x] Dismiss button on manual Add Show form
+- [x] Add Show form state persists across tab navigation
 
 ---
 
