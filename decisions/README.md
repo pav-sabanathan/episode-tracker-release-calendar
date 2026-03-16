@@ -52,6 +52,9 @@ Each decision document follows the same structure:
 | ICS Android fix — CRLF and required fields | V2 | Android calendar parsers are strict about line endings and mandatory VEVENT fields — LF-only files fail silently |
 | Favicon changed to icon mark only | V2 | Wordmark unreadable at favicon scale — icon mark only improves brand recognition in browser tabs and bookmarks |
 | Season navigation added to Show Detail panel | V2 | Current season only was too limiting for long-running shows — users need historical season tracking for complete watchlist management |
+| Total Episodes field added to manual Add Show form | V2 | Without episode count the calendar had no stop condition — episodes would generate indefinitely |
+| Season Complete status on final episode air date | V2 | Automatic status update on season end removes manual housekeeping without removing the show from the watchlist |
+| Edit functionality for manually added shows only | V2 | Database shows have fixed metadata — edit is only meaningful for user-defined manual entries |
 
 ---
 
