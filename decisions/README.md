@@ -51,11 +51,11 @@ Each decision document follows the same structure:
 | Export button standardised to white | V2 | Platform accent colours vary in brightness — white ensures consistent visibility in dark mode across all platforms |
 | ICS Android fix — CRLF and required fields | V2 | Android calendar parsers are strict about line endings and mandatory VEVENT fields — LF-only files fail silently |
 | Favicon changed to icon mark only | V2 | Wordmark unreadable at favicon scale — icon mark only improves brand recognition in browser tabs and bookmarks |
-| Season navigation added to Show Detail panel | V2 | Current season only was too limiting for long-running shows — users need historical season tracking for complete watchlist management |
-| Total Episodes field added to manual Add Show form | V2 | Without episode count the calendar had no stop condition — episodes would generate indefinitely |
-| Season Complete status on final episode air date | V2 | Automatic status update on season end removes manual housekeeping without removing the show from the watchlist |
+| First Episode Date field added to manual form | V2 | Release day alone had no start anchor — users needed a specific date to generate an accurate calendar regardless of when they add the show |
+| Total Episodes field added to manual form | V2 | Without episode count the calendar had no stop condition and would generate episodes indefinitely |
+| Season Complete status on final episode air date | V2 | Automatic status update removes manual housekeeping without removing the show from the watchlist |
 | Edit functionality for manually added shows only | V2 | Database shows have fixed metadata — edit is only meaningful for user-defined manual entries |
-| First Episode Date field added to manual Add Show form | V2 | Release day alone has no start anchor — without a specific date the calendar defaults to the next occurrence from today which is inaccurate for shows starting in the future |
+| Vercel routing fix via vercel.json | V2 | React SPA routing requires all paths to serve index.html — without vercel.json direct URL access and page refresh returned 404 on all non-root routes |
 
 ---
 
