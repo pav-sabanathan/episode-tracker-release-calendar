@@ -71,6 +71,13 @@ prompt, deployed independently on Vercel.
       CRLF line endings, required VEVENT fields, 
       UTC timestamp
 - [x] Favicon updated to icon mark only (no wordmark)
+- [x] Total Episodes field added to manual Add Show form
+- [x] First Episode Date field added to manual Add Show form
+- [x] Season Complete status on final episode air date
+- [x] Edit functionality for manually added shows
+- [x] Release Time and First Episode Date icons changed to white
+- [x] iPad modal overflow fixed — Release Day/Time fields
+- [x] Vercel client-side routing fix — 404 on direct URL access resolved
 
 ---
 
