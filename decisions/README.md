@@ -55,6 +55,7 @@ Each decision document follows the same structure:
 | Total Episodes field added to manual Add Show form | V2 | Without episode count the calendar had no stop condition — episodes would generate indefinitely |
 | Season Complete status on final episode air date | V2 | Automatic status update on season end removes manual housekeeping without removing the show from the watchlist |
 | Edit functionality for manually added shows only | V2 | Database shows have fixed metadata — edit is only meaningful for user-defined manual entries |
+| First Episode Date field added to manual Add Show form | V2 | Release day alone has no start anchor — without a specific date the calendar defaults to the next occurrence from today which is inaccurate for shows starting in the future |
 
 ---
 
