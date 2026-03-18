@@ -8,7 +8,7 @@
 |---|---|
 | **Author** | Pav Sabanathan |
 | **Started** | March 2026 |
-| **Status** | ✅ MVP Live |
+| **Status** | ✅ V2 Live |
 | **Built With** | Lovable |
 | **Live Product** | [Plotify](https://getplotify.vercel.app) |
 | **GitHub** | [View Repository](https://github.com/pav-sabanathan/getplotify) |
@@ -71,6 +71,35 @@ The insight that shaped the MVP most: **calendar-first beats
 notification-first.** Notifications require permissions and 
 infrastructure. A calendar view delivers immediate value on first 
 visit with zero setup friction.
+
+**External Research Validation**
+
+Early product research conducted before the 
+first line of code was written validated the 
+core problem and approach. Key findings that 
+informed the roadmap:
+
+- The primary gap in existing trackers (Trakt, 
+  TV Time, Hobi) is that calendar sync is either 
+  paywalled, notification-centric, or limited 
+  to static ICS exports that become obsolete 
+  when schedules change
+- TVMaze and Watchmode identified as complementary 
+  APIs for V5 — TVMaze for scheduling data, 
+  Watchmode for Canadian streaming availability
+- The Canada/US regional discrepancy is a 
+  documented gap in all existing US-centric 
+  trackers — an opportunity for Plotify to 
+  differentiate in its home market
+- Dynamic Webcal subscription (polling-based) 
+  identified as the correct long-term architecture 
+  over static ICS downloads
+
+This research is documented in the project 
+repository and informed several backlog 
+additions including Webcal dynamic subscription, 
+spoiler-free calendar toggle, specials handling, 
+and regional streaming accuracy.
 
 ---
 
