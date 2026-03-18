@@ -231,6 +231,81 @@ on localStorage would severely limit the feature.
 V5 authentication and Supabase are hard 
 dependencies.
 
+## 📋 Additional Backlog — Research Identified
+
+Features and considerations identified during early 
+product research that complement the existing roadmap.
+
+### Product Features
+
+- **Webcal dynamic subscription** — upgrade from 
+  static ICS download to a polling-based subscription 
+  URL (webcal://). Users subscribe once and their 
+  calendar updates automatically when schedules 
+  change. Requires server-side endpoint — V5 
+  dependency. Addresses the core limitation of 
+  static ICS files becoming obsolete when networks 
+  change scheduling (e.g. double episodes, 
+  schedule shifts)
+
+- **Spoiler-free calendar toggle** — Settings option 
+  to exclude episode descriptions from ICS/Webcal 
+  exports. Prevents calendar notifications from 
+  spoiling unwatched episodes. Scope: V4 Settings
+
+- **Specials and bridge episodes** — chronological 
+  integration of specials into the main season 
+  timeline rather than a separate category. 
+  Addresses the "Doctor Who problem" common in 
+  existing trackers where Christmas specials and 
+  bridge episodes are incorrectly sequestered 
+  outside the seasonal calendar. Scope: V5/TMDb
+
+- **Canada/US regional streaming discrepancy** — 
+  differentiate between US broadcast dates and 
+  Canadian streaming availability dates. A show 
+  airing Sunday on Fox in the US may not be 
+  available on Disney+ Canada until a different 
+  day. Watchmode API supports country=CA parameter 
+  for regional accuracy. Scope: V5
+
+- **Alphabetisation fix** — sort show titles 
+  ignoring leading articles (The, A, An) so 
+  "The Bear" sorts under B not T. Common failure 
+  point in existing trackers. Scope: V3/V4 polish
+
+### API Evaluation Notes
+
+- **TVMaze** — evaluate alongside TMDb for V5 
+  integration. Key advantages: dedicated 
+  /schedule and /schedule/full endpoints designed 
+  for calendar use cases, free with no commercial 
+  restrictions (CC BY-SA attribution), supports 
+  IMDb IDs as lookup keys. TMDb remains stronger 
+  for poster images and genre classification. 
+  A hybrid approach (TVMaze for scheduling, 
+  TMDb for metadata/images) may be optimal
+
+- **Watchmode** — evaluate for V5 Canadian 
+  streaming availability. Provides country-specific 
+  streaming data (country=CA) to resolve 
+  Canada/US discrepancies. 1,000 free requests 
+  per month on free tier
+
+### Portfolio and IP Notes
+
+- Thorough documentation of prompt engineering 
+  and architectural decisions (decisions log, 
+  case study) serves dual purpose — strengthens 
+  portfolio signal AND demonstrates "sufficient 
+  human skill and judgment" required for Canadian 
+  copyright protection of AI-assisted work
+
+- Open source licence on GitHub (MIT) provides 
+  portfolio visibility while clearly defining 
+  terms of reuse. No patent filing recommended 
+  for a portfolio project at this stage
+  
 ---
 
 ## 🔭 Future Versions — Backlog
