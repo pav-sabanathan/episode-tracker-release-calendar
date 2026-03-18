@@ -238,12 +238,83 @@ dependencies.
 Features under consideration for post-V5 development, 
 subject to user feedback and validation.
 
-- Push notifications (episode dropping tomorrow alerts)
-- Google Calendar and Apple Calendar native sync
-- "Catch Me Up" feature for shows you've fallen behind on
-- Social layer — share watchlist, see what friends watch
-- Mobile app (React Native / Expo)
-- Recommendation engine based on watch history
+### Web Backlog (V6+)
+
+- Badges & Achievement System — genre-based trophy 
+  collection with tiered milestones (Bronze/Silver/
+  Gold/Platinum). Full scope documented in V6.
+- "Catch Me Up" feature for shows you've fallen 
+  behind on — summarises how many episodes behind 
+  you are and what you missed
+- Recommendation engine based on watch history — 
+  suggest new shows based on genres and platforms 
+  already tracked
+- Social layer — share watchlist, see what friends 
+  are watching, compare badge collections
+- Google Calendar and Apple Calendar native sync — 
+  automatic two-way sync beyond current ICS export. 
+  Note: ICS export (V2) covers most use cases in 
+  the interim
+- New season detection — automatic calendar update 
+  when a new season premiere date is announced for 
+  a tracked show (scoped for V5 alongside TMDb 
+  integration)
+
+### App Store / Play Store — Future Roadmap
+
+A native mobile app launch is a post-V5 goal 
+and represents a significant separate workstream. 
+The following are required for store submission:
+
+**Must-haves:**
+- Mobile app rebuild in React Native / Expo — 
+  the current web app is not submittable to 
+  either store. React Native is the natural 
+  choice given the existing React codebase — 
+  logic, data structures, and Supabase 
+  integration carry over directly
+- Push notifications — episode dropping 
+  tomorrow alerts. Core user expectation 
+  for a native tracker app. Achievable via 
+  React Native notification libraries once 
+  the mobile rebuild is underway
+- Social layer — without social features 
+  Plotify competes directly with established 
+  apps (TV Time, Serializd, Letterboxd) that 
+  already have large communities. A 
+  differentiated social angle is important 
+  for store discoverability and retention
+
+**Nice to have at launch:**
+- Badges & Achievement System (V6) — strong 
+  retention mechanic and social discussion 
+  driver, particularly valuable at app launch
+- Recommendation engine — valuable for 
+  engagement but complex to build well. 
+  Could ship post-launch based on feedback
+- Catch Me Up — useful but niche, not a 
+  blocker for store submission
+
+**Dependency chain for store launch:**
+```
+V3 — Landing page
+V4 — Settings & custom services  
+V5 — Authentication & Supabase + TMDb integration
+V6 — Badges & achievement system
+V7 — React Native rebuild
+V8 — Push notifications + App Store/Play Store submission
+```
+
+### Note on React Native Migration
+The existing React component structure and 
+Supabase integration make the V7 migration 
+more straightforward than a ground-up rebuild. 
+Core business logic, API calls, and data 
+models carry over directly. The primary 
+workload is rebuilding the UI layer in 
+React Native and integrating platform-specific 
+features (push notifications, native date 
+pickers, app store assets).
 
 ---
 
