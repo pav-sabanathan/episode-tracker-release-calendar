@@ -58,6 +58,13 @@ Each decision document follows the same structure:
 | Vercel routing fix via vercel.json | V2 | React SPA routing requires all paths to serve index.html — without vercel.json direct URL access and page refresh returned 404 on all non-root routes |
 | Badges count toward all applicable genres simultaneously | V6 | Most prestige TV is multi-genre — single primary genre classification would feel arbitrary and reward users less fairly |
 | Badge system deferred to V6 post-authentication | V6 | localStorage-only badge progress would not persist across devices or support social features — Supabase user accounts are a hard dependency |
+| Webcal dynamic subscription scoped to V5 | Backlog | Static ICS files become obsolete when schedules change — a polling-based subscription URL ensures calendar entries update automatically without user intervention |
+| Spoiler-free calendar toggle scoped to V4 Settings | Backlog | Calendar notifications containing episode descriptions can spoil unwatched content — opt-in toggle gives users control over what appears in their calendar events |
+| Specials and bridge episodes scoped to V5/TMDb | Backlog | Existing trackers incorrectly sequester specials outside the seasonal calendar — chronological integration is a known differentiator from competitors like Trakt |
+| Canada/US regional streaming discrepancy scoped to V5 | Backlog | US broadcast dates and Canadian streaming availability dates differ — a show airing Sunday on Fox in the US may not be available on Disney+ Canada until a different day. Watchmode country=CA parameter identified as the solution |
+| TVMaze evaluated as complement to TMDb for V5 | Backlog | TVMaze offers dedicated schedule endpoints ideal for calendar use cases and is free with no commercial restrictions — hybrid approach (TVMaze for scheduling, TMDb for metadata and images) may be optimal |
+| Watchmode evaluated for Canadian streaming availability | Backlog | Provides country-specific streaming data to resolve Canada/US discrepancies — 1,000 free requests per month on free tier |
+| Alphabetisation fix identified as V3/V4 polish item | Backlog | Common failure point in existing trackers identified during early research — sort titles ignoring leading articles so "The Bear" sorts under B not T |
 
 ---
 
