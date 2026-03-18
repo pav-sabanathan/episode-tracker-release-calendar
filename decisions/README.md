@@ -56,6 +56,8 @@ Each decision document follows the same structure:
 | Season Complete status on final episode air date | V2 | Automatic status update removes manual housekeeping without removing the show from the watchlist |
 | Edit functionality for manually added shows only | V2 | Database shows have fixed metadata — edit is only meaningful for user-defined manual entries |
 | Vercel routing fix via vercel.json | V2 | React SPA routing requires all paths to serve index.html — without vercel.json direct URL access and page refresh returned 404 on all non-root routes |
+| Badges count toward all applicable genres simultaneously | V6 | Most prestige TV is multi-genre — single primary genre classification would feel arbitrary and reward users less fairly |
+| Badge system deferred to V6 post-authentication | V6 | localStorage-only badge progress would not persist across devices or support social features — Supabase user accounts are a hard dependency |
 
 ---
 
