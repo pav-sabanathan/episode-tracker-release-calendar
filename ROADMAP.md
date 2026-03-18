@@ -136,6 +136,101 @@ If a new season premiere date is found, the calendar
 is updated automatically and the user is notified 
 via toast. Scope: V5 alongside TMDb integration.
 
+## 🏆 V6 — Badges & Achievement System — Planned
+
+A retention and reward mechanic that gives users 
+a sense of achievement for watching and tracking 
+shows across Plotify.
+
+### Core Concept
+Genre-based badge collection with tiered milestones, 
+inspired by achievement systems in apps like OnePlus 
+Red Cable Club and Pokémon TCGP. Users collect badges 
+by watching episodes across different show categories, 
+with bronze/silver/gold/platinum tiers per genre.
+
+### Badge Categories
+Genre badges powered by TMDb genre classification 
+(introduced in V5). Each watched episode counts 
+toward all applicable genres simultaneously:
+
+- 🎭 Drama
+- 😂 Comedy  
+- 🎬 Action & Adventure
+- 🚀 Sci-Fi & Fantasy
+- 🔍 Crime
+- 🎨 Animation
+- 🍣 Anime (Animation + Japanese origin)
+- 📺 Reality
+- 📰 Documentary
+
+### Tier Thresholds (per genre)
+| Tier | Episodes Watched |
+|---|---|
+| Bronze | 25 |
+| Silver | 100 |
+| Gold | 500 |
+| Platinum | 1000 |
+
+### Special Badges
+Time-limited and milestone badges outside of 
+genre categories:
+- 🎂 Plotify Anniversary — issued annually 
+  on the user's signup anniversary date
+- 🔥 Binge Badge — 5+ episodes of the same 
+  show watched within 24 hours
+- 📅 Streak Badge — episodes logged on 
+  consecutive days (7, 30, 100 day tiers)
+- 🏁 Season Complete — finish an entire season
+  (already implemented in V2 as a status — 
+  could be formalised as a badge)
+
+### Trophy Design
+A combination of the five major TV awards 
+aesthetics (BAFTA, Emmy, Golden Globe, SAG, 
+Critics Choice) rendered as tiered trophies:
+- Bronze — copper/brown finish
+- Silver — silver/chrome finish  
+- Gold — gold finish
+- Platinum — iridescent/holographic finish
+
+### Technical Dependencies
+- ✅ Watch progress tracking (V2)
+- ⬜ User authentication (V5)
+- ⬜ Supabase database for badge progress (V5)
+- ⬜ TMDb genre classification (V5)
+
+### UI Placement
+Dedicated Badges tab or section within a 
+future Profile screen. Includes:
+- Badge collection grid (locked/unlocked states)
+- Progress bar per badge showing episodes 
+  toward next tier
+- Profile summary showing total episodes 
+  tracked and badges earned
+- Achievement Showcase — 3 pinned badges 
+  chosen by the user
+- Time-limited badge section
+
+### Key Design Decisions
+- Watched episodes count toward ALL applicable 
+  genre badges simultaneously — rewards users 
+  fairly given how multi-genre most prestige 
+  TV is
+- Badge progress stored server-side in Supabase 
+  tied to user account — enables cross-device 
+  sync and future social/sharing features
+- Anniversary badges issued on signup 
+  anniversary date — drives annual retention
+
+### Why V6 and not earlier
+Badge progress needs to be tied to authenticated 
+user accounts to persist across devices and 
+support the social/discussion angle. Building 
+on localStorage would severely limit the feature. 
+V5 authentication and Supabase are hard 
+dependencies.
+
 ---
 
 ## 🔭 Future Versions — Backlog
