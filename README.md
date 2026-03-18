@@ -47,5 +47,18 @@ was built — including the prompts used, the decisions made, and
 what was changed between iterations — is documented in the 
 case study above.
 
+**Current Version:** V2 — Core Feature Expansion  
+**Status:** Live at getplotify.vercel.app
+
+**What's in V2:**
+- Real-time show search with 20+ current shows
+- Auto-populated calendar on show add
+- Episode watch tracking with progress bar
+- Season navigation in Show Detail panel
+- ICS calendar export (Apple, Google, Outlook, Android)
+- Edit functionality for manually added shows
+- First Episode Date for accurate calendar scheduling
+- Season Complete status detection
+
 **Application code** lives in the companion repository: 
 [github.com/pav-sabanathan/plotify](https://github.com/pav-sabanathan/plotify)
