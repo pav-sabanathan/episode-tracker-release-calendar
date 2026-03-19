@@ -305,6 +305,42 @@ product research that complement the existing roadmap.
   portfolio visibility while clearly defining 
   terms of reuse. No patent filing recommended 
   for a portfolio project at this stage
+
+  ### Additional Tools and Infrastructure
+
+- **PostHog** — add to V3 scope. Instrument 
+  analytics on the landing page and core app 
+  events (show added, episode marked watched, 
+  ICS exported). Free tier sufficient for 
+  current scale. Provides real usage data to 
+  inform future prioritisation decisions
+
+- **Namecheap custom domain** — getplotify.com 
+  or getplotify.app. ~$15-30/year. Independent 
+  of build work, can be done any time
+
+- **SimpleLogin** — email forwarding from 
+  custom domain (e.g. hello@getplotify.com). 
+  Add to V5 scope alongside authentication
+
+- **Formspree** — optional waitlist or contact 
+  form on V3 landing page. Low effort addition 
+  if needed
+
+- **TestFlight / Xcode** — Apple beta 
+  distribution and native iOS build tooling. 
+  V7 scope alongside React Native rebuild
+
+- **RevenueCat** — in-app purchase and 
+  subscription management for App Store and 
+  Play Store. V8 scope
+
+- **Rotato / CapCut** — 3D device renders 
+  and App Store trailer editing. V8 scope
+
+- **SQLite** — local database caching layer 
+  for React Native. Evaluate for V7 alongside 
+  Supabase real-time sync
   
 ---
 
