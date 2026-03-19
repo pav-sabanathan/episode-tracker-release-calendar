@@ -306,7 +306,7 @@ product research that complement the existing roadmap.
   terms of reuse. No patent filing recommended 
   for a portfolio project at this stage
 
-  ### Additional Tools and Infrastructure
+### Additional Tools and Infrastructure
 
 - **PostHog** — add to V3 scope. Instrument 
   analytics on the landing page and core app 
