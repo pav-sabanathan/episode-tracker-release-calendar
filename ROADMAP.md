@@ -81,17 +81,22 @@ prompt, deployed independently on Vercel.
 
 ---
 
-## 📋 V3 — Landing Page — In Planning
+## 🌐 V3 — Landing Page — ✅ Complete
 
-A public-facing landing page that gives first-time visitors 
-context before entering the app.
-
-- Hero section with headline, subheadline, and CTA
-- Platform social proof bar
-- How It Works — three-column feature explainer
-- Features highlight with app screenshots
-- Footer with Privacy Policy and Terms of Service placeholders
-- "Try Plotify Free" CTA throughout
+- [x] Public landing page at root URL
+- [x] Hero section with headline and dual CTAs
+- [x] Platform bar showing all five supported services
+- [x] How It Works — three column explainer
+- [x] Features Highlight — calendar and My Shows sections
+- [x] Bottom CTA section
+- [x] Footer with Privacy Policy and Terms of Service
+- [x] Returning users bypass landing page automatically
+- [x] PostHog Product Analytics integrated
+- [x] PostHog Session Replay enabled
+- [x] PostHog Error Tracking enabled
+- [x] Custom events across landing page and app
+- [x] Alphabetisation fix — leading articles ignored in sort order
+- [x] Delete confirmation modal on My Shows cards
 
 ---
 
