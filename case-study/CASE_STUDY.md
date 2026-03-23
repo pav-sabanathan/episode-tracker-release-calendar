@@ -160,7 +160,7 @@ remove the barrier, validate the core experience first.
 
 StreamLine was built using Lovable, an AI-native web app builder, 
 using a detailed natural language prompt informed directly by the 
-PRD. The build process happened in two focused rounds:
+PRD. The initial build process happened in three focused rounds:
 
 **Round 1 — Initial build prompt**
 A comprehensive specification covering: dashboard layout, Up Next 
