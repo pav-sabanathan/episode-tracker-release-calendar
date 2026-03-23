@@ -65,7 +65,12 @@ Each decision document follows the same structure:
 | TVMaze evaluated as complement to TMDb for V5 | Backlog | TVMaze offers dedicated schedule endpoints ideal for calendar use cases and is free with no commercial restrictions — hybrid approach (TVMaze for scheduling, TMDb for metadata and images) may be optimal |
 | Watchmode evaluated for Canadian streaming availability | Backlog | Provides country-specific streaming data to resolve Canada/US discrepancies — 1,000 free requests per month on free tier |
 | Alphabetisation fix identified as V3/V4 polish item | Backlog | Common failure point in existing trackers identified during early research — sort titles ignoring leading articles so "The Bear" sorts under B not T |
-| Confirmation modal added to show deletion | V3 | Destructive actions should always require confirmation — immediate deletion with no undo creates risk of accidental data loss including watch progress |
+| Returning users bypass landing page automatically | V3 | Existing users with saved shows should not be interrupted by marketing content — localStorage check on load routes them directly to the app |
+| PostHog selected over Google Analytics | V3 | Single platform covers Product Analytics, Session Replay, and Error Tracking — GA requires separate tools for equivalent coverage. Free tier sufficient for current scale |
+| API keys stored as Vercel environment variables | V3 | Production-grade security practice — hardcoding API keys in source exposes them in the public GitHub repository |
+| Send Feedback excluded from landing page footer | V3 | In-app utility that requires app context — not appropriate on a public marketing page |
+| Delete confirmation modal added to show deletion | V3 | Destructive actions should always require confirmation — immediate deletion with no undo creates risk of accidental data loss including watch progress |
+| Alphabetisation ignores leading articles | V3 | "The", "A", "An" excluded from sort order — common failure point in existing trackers identified during early product research |
 
 ---
 
