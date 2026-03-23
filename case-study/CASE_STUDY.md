@@ -8,7 +8,7 @@
 |---|---|
 | **Author** | Pav Sabanathan |
 | **Started** | March 2026 |
-| **Status** | ✅ V2 Live |
+| **Status** | ✅ V3 Live |
 | **Built With** | Lovable |
 | **Live Product** | [Plotify](https://getplotify.vercel.app) |
 | **GitHub** | [View Repository](https://github.com/pav-sabanathan/getplotify) |
@@ -226,6 +226,7 @@ Both prompts executed cleanly on the second attempt.
 With the core Polish update shipped, a second round 
 of improvements focused on three areas: branding, 
 data behaviour, and mobile experience.
+
 **V2 — Core Feature Expansion**
 
 V2 introduced three major feature areas that 
@@ -381,6 +382,61 @@ debug when something goes wrong. This mirrors a
 principle from software development — small, 
 atomic commits are easier to revert than large, 
 sweeping changes.
+
+**V3 — Landing Page & Analytics**
+
+V3 introduced the public-facing layer of Plotify — 
+a landing page that gives first-time visitors 
+context before entering the app, and analytics 
+infrastructure to start measuring real user 
+behaviour.
+
+**Landing Page**
+The landing page sits at the root URL and serves 
+as the product's public face. It covers the core 
+value proposition, how the product works, and a 
+features highlight with real app screenshots. 
+Returning users who already have shows saved in 
+localStorage bypass it automatically and land 
+directly in the app — preserving the experience 
+for existing users while giving new visitors the 
+context they need.
+
+The footer retains Privacy Policy and Terms of 
+Service links — a deliberate decision to keep 
+legal links on the public-facing page where 
+visitors expect them, while Send Feedback remains 
+inside the app under Settings only.
+
+**PostHog Analytics**
+V3 introduced the first real instrumentation of 
+Plotify. PostHog was selected for its generous 
+free tier, React SDK, and the combination of 
+Product Analytics, Session Replay, and Error 
+Tracking in a single platform.
+
+Custom events were defined across both the 
+landing page (landing_page_viewed, cta_clicked, 
+how_it_works_viewed, features_viewed) and the 
+core app (app_opened, show_added_search, 
+show_added_manual, episode_marked_watched, 
+ics_exported, onboarding_completed).
+
+API keys are stored as Vercel environment 
+variables and never hardcoded in source — 
+a deliberate decision to treat this as a 
+production-grade implementation rather than 
+a throwaway portfolio project.
+
+**Additional Improvements**
+- Alphabetisation fixed across all show lists — 
+  leading articles (The, A, An) excluded from 
+  sort order, a known failure point in most 
+  existing TV trackers
+- Delete confirmation modal added to My Shows — 
+  destructive actions should always require 
+  confirmation to prevent accidental data loss 
+  including watch progress
 
 ---
 
