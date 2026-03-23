@@ -7,7 +7,7 @@
 
 | | |
 |---|---|
-| **Status** | ✅ V2 — Core Feature Expansion Live |
+| **Status** | ✅ V3 — Landing Page Live |
 | **Built With** | Lovable · Vercel |
 | **Live Product** | [getplotify.vercel.app](https://getplotify.vercel.app) |
 | **Roadmap** | [View Roadmap](./ROADMAP.md) |
