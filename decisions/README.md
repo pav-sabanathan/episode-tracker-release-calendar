@@ -71,6 +71,11 @@ Each decision document follows the same structure:
 | Send Feedback excluded from landing page footer | V3 | In-app utility that requires app context — not appropriate on a public marketing page |
 | Delete confirmation modal added to show deletion | V3 | Destructive actions should always require confirmation — immediate deletion with no undo creates risk of accidental data loss including watch progress |
 | Alphabetisation ignores leading articles | V3 | "The", "A", "An" excluded from sort order — common failure point in existing trackers identified during early product research |
+| Suggested platforms list curated for Canada and UK markets | V4 | 10 platforms selected to cover the regional tier for Plotify's two primary markets — Crave, Paramount+, Max, Crunchyroll, Sky, NOW TV, Channel 4, ITVX, Peacock, BritBox. Built-in list covers the universal tier. |
+| Hex input as default colour entry with colour wheel as opt-in | V4 | Power users know their platform's brand hex — hex-first keeps the default UI clean. Colour wheel opens on swatch click for users who prefer visual selection. Preset grid rejected as too limiting for brand-specific colours. |
+| Spoiler-free calendar export as opt-in toggle | V4 | Calendar notifications risk spoiling unwatched episodes — opt-in rather than opt-out because most users want full context in their calendar. Stored in localStorage in V4, migrates to Supabase user_preferences in V5. |
+| Settings cog replaced by avatar dropdown post-auth | V4/V5 | Two competing icons in the header creates visual noise — Settings moves inside the avatar dropdown for signed-in users. Guest users retain the cog. Decision made in V4 to inform V5 auth UI build. |
+| Competitor research conducted before V4 build | V4 | TVCal, Trakt.tv, and TV Time tested during V4 week. Key finding: none handle the guest-to-signed-in transition well — identified as a V5 priority. TVCal's Webcal UX set as the benchmark for V5P6. |
 
 ---
 
