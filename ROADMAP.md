@@ -100,17 +100,19 @@ prompt, deployed independently on Vercel.
 
 ---
 
-## ⚙️ V4 — Settings & Customisation — In Planning
+## ⚙️ V4 — Settings & Customisation — ✅ Complete
 
 Giving users control over their experience and expanding 
 platform coverage beyond the built-in list.
 
-- Settings menu accessible from all screens
-- Custom streaming service creation with colour picker
-- Custom services populate Add Show dropdown dynamically
-- Display preferences toggle (show/hide past episodes)
-- About section with version history
-- Feedback mechanism surfaced in settings
+- [x] Settings menu accessible from all screens
+- [x] Custom streaming service creation with hex input and colour wheel picker
+- [x] Custom services populate Add Show dropdown dynamically
+- [x] Display preferences toggle (show/hide past episodes)
+- [x] About section with version history
+- [x] Feedback mechanism surfaced in settings
+- [x] Spoiler-free calendar export toggle
+- [x] Suggested platforms list with one-tap add (Crave, Paramount+, Max, Crunchyroll, Sky, NOW TV, Channel 4, ITVX, Peacock, BritBox) 
 
 ---
 
