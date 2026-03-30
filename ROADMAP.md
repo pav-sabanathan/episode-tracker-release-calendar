@@ -116,32 +116,61 @@ platform coverage beyond the built-in list.
 
 ---
 
-## 🔐 V5 — Authentication & Data Persistence — In Planning
+## 🔐 V5 — Authentication, Infrastructure & API Integrations — In Planning
 
-The milestone that takes Plotify from demo to real product. 
-Requires Supabase integration — architectural review with 
-engineering collaborator before starting.
+The milestone that takes Plotify from demo to real product. V5 is broken 
+into 6 sequential prompts to manage complexity and reduce build risk.
 
-- Supabase authentication (email/password + Google OAuth)
-- User account creation and sign-in flow
-- Cross-device data persistence for all show and 
-  watch progress data
-- Guest mode with sign-in prompt for unauthenticated users
-- User avatar and account menu in app header
-  
-### 🔭 V5 — Additional Scope Note
-Replace mock show database (introduced in V2) with 
-a live TMDb API integration. API key to be stored 
-server-side via Supabase to avoid front-end exposure. 
-Attribution required: "This product uses the TMDb 
-API but is not endorsed or certified by TMDb."
+### V5P1 — Supabase Infrastructure
+* Supabase project connected to Plotify
+* Database tables: users, shows, watch_progress, user_preferences,
+  custom_services, webcal_subscriptions
+* Row Level Security (RLS) enabled on all tables
+* tmdb_id field added to shows table for API integration
 
-**New season detection:** On app open, Plotify checks 
-TMDb for premiere date updates on shows marked as 
-"ended" or "between seasons" in the user's watchlist. 
-If a new season premiere date is found, the calendar 
-is updated automatically and the user is notified 
-via toast. Scope: V5 alongside TMDb integration.
+### V5P2 — Authentication
+* Supabase authentication (email/password + Google OAuth)
+* User account creation and sign-in flow as modal overlay
+* Guest mode maintained — full app accessible without account
+* Persistent sign-in banner on Home for guest users
+* Profile setup step on first sign-in (display name)
+* User avatar with initials in header when signed in
+* Account dropdown with Settings and Sign Out
+
+### V5P3 — TMDb & TVMaze Integration
+* TMDb API integration for show search (triggers after 3 characters)
+* Search results show poster thumbnail, name, and year
+* Auto-population of title, poster, season, release day and time
+* TVMaze used for scheduling data (air dates and times)
+* tmdb_id stored on show record for downstream API calls
+* Manual entry retained as fallback for unmatched shows
+* TMDb attribution displayed in search UI
+
+### V5P4 — Data Migration
+* All signed-in user data migrated from localStorage to Supabase
+* Guest users retain localStorage behaviour unchanged
+* One-time import prompt on first sign-in if local data exists
+* Real-time sync across devices via Supabase subscriptions
+* Offline handling with queued changes and sync on reconnect
+
+### V5P5 — Watchmode & New Season Detection
+* Watchmode API integration for streaming availability by region (CA default)
+* Platform suggestion shown in Add Show form based on Watchmode data
+* New season detection via TMDb on app load for all tracked shows
+* Notification banner on My Shows when a new season is available
+* Season check throttled to once per day per show via last_checked_at field
+
+### V5P6 — Dynamic Webcal Endpoint
+* Serverless function at /api/calendar/[token].ics
+* Unique token per user stored in webcal_subscriptions table
+* ICS payload generated from live Supabase data — RFC 5545 compliant
+* Respects spoiler_free_calendar preference
+* Calendar Feed section in Settings for signed-in users
+* One-tap buttons for Google Calendar and iCal file download
+* Token regeneration option if feed URL is compromised
+* Guest users retain existing client-side ICS export
+
+### Target: Product Hunt launch post-V5P6
 
 ## 🏆 V6 — Badges & Achievement System — Planned
 
