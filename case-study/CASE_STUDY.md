@@ -8,7 +8,7 @@
 |---|---|
 | **Author** | Pav Sabanathan |
 | **Started** | March 2026 |
-| **Status** | ✅ V3 Live |
+| **Status** | ✅ V4 Live |
 | **Built With** | Lovable |
 | **Live Product** | [Plotify](https://getplotify.vercel.app) |
 | **GitHub** | [View Repository](https://github.com/pav-sabanathan/getplotify) |
