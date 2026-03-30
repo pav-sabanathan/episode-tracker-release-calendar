@@ -7,7 +7,7 @@
 
 | | |
 |---|---|
-| **Status** | ✅ V3 — Landing Page Live |
+| **Status** | ✅ V4 — Settings & Custom Platforms |
 | **Built With** | Lovable · Vercel |
 | **Live Product** | [getplotify.vercel.app](https://getplotify.vercel.app) |
 | **Roadmap** | [View Roadmap](./ROADMAP.md) |
@@ -47,17 +47,23 @@ was built — including the prompts used, the decisions made, and
 what was changed between iterations — is documented in the 
 case study above.
 
-**Current Version:** V3 — Landing Page  
+**Current Version:** V4 — Settings & Custom Platforms  
 **Status:** Live at getplotify.vercel.app
 
-**What's in V3:**
-- Public landing page with product overview
-- Returning user detection — bypasses landing 
-  page if shows already saved
-- PostHog analytics — product analytics, 
-  session replay, and error tracking
-- Alphabetisation fix across all show lists
-- Delete confirmation modal on My Shows
+**What's in V4:**
+
+* Settings page accessible from all screens via cog icon
+* Built-in streaming services displayed with platform colours
+* 10 suggested platforms with one-tap add (Crave, Paramount+,
+  Max, Crunchyroll, Sky, NOW TV, Channel 4, ITVX, Peacock, BritBox)
+* Custom streaming service creation with hex colour input
+* Custom platforms populate Add Show dropdown dynamically
+* Platform accent colours applied consistently across show cards,
+  badges, calendar pills, and Up Next strip
+* Display preferences toggle — show/hide past 30 days of episodes
+* Spoiler-free calendar export toggle
+* Feedback mechanism surfaced in Settings
+* About section with version and tagline
 
 **Application code** lives in the companion repository: 
 [github.com/pav-sabanathan/plotify](https://github.com/pav-sabanathan/plotify)
