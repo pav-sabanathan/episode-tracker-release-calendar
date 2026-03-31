@@ -18,7 +18,7 @@
 ## The Problem
 
 Streaming is fragmented. Shows release across Netflix, Disney+, 
-Apple TV+, Prime Video, and BBC iPlayer — with no single place 
+Apple TV, Prime Video, and BBC iPlayer — with no single place 
 to track when new episodes drop. Plotify solves that.
 
 ---
