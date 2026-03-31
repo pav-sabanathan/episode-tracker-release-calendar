@@ -170,7 +170,7 @@ into 6 sequential prompts to manage complexity and reduce build risk.
 * Token regeneration option if feed URL is compromised
 * Guest users retain existing client-side ICS export
 
-**V5 Landing Page Polish — TMDb Poster Grid**  
+### V5 Landing Page Polish — TMDb Poster Grid
 Update the landing page hero section to display a dynamic grid of TV show poster 
 images fetched from the TMDb API, replacing the current static hero. Use a curated 
 list of 12-15 popular shows. Requires V5P3 (TMDb integration) to be complete first. 
